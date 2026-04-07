@@ -189,6 +189,8 @@ wxString Slic3r::get_stage_string(int stage)
         return _L("Thermal Preconditioning for first layer optimization");
     case 65:
         return _L("Calibrating the detection position of nozzle clumping"); // N7
+    case 66:
+        return _L("Purifying the chamber air");
     default:
         BOOST_LOG_TRIVIAL(info) << "stage = " << stage;
     }
